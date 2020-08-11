@@ -12,6 +12,9 @@ public class User implements Serializable {
     private String password;
     private String email;
 
+    //记住我
+    private boolean isRemember;
+
     public String getUsername() {
 
         return username;
@@ -35,6 +38,14 @@ public class User implements Serializable {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public boolean isRemember() {
+        return isRemember;
+    }
+
+    public void setRemember(boolean remember) {
+        isRemember = remember;
     }
 
     @Override
