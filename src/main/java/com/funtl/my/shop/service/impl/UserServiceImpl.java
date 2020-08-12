@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
  * @version: 1.0.0
  * @date: 2020-08-12 00:35
  **/
-@Service(value = "userService")
+@Service
 public class UserServiceImpl implements UserService {
 
     private UserDao userDao = SpringContext.getBean("userDao");
