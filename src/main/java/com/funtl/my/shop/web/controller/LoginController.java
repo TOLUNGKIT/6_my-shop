@@ -64,7 +64,7 @@ public class LoginController extends HttpServlet {
         // 登录失败
         else {
             req.setAttribute("message","用户名或密码错误");
-            req.getRequestDispatcher("/index.jsp").forward(req,resp);
+            req.getRequestDispatcher("/login.jsp").forward(req,resp);
         }
     }
 }
